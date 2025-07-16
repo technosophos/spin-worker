@@ -25,5 +25,5 @@ Hello from a worker
 $ curl localhost:3000
 Hello from Spin
 $ curl localhost:3000/worker
-Hello from a worker%      
+Hello from a worker
 ```
