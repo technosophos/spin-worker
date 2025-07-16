@@ -1,0 +1,18 @@
+spin_manifest_version = 2
+
+[application]
+authors = ["Matt Butcher <matt.butcher@fermyon.com>"]
+description = ""
+name = "spin-worker"
+version = "0.1.0"
+
+[[trigger.http]]
+route = "/..."
+component = "spin-worker"
+
+[component.spin-worker]
+source = "dist/spin-worker.wasm"
+exclude_files = ["**/node_modules"]
+[component.spin-worker.build]
+command = ["npm install", "npm run build"]
+watch = ["src/**/*.js"]
