@@ -11,7 +11,7 @@ To build and run just the Worker:
 ```
 cd cf-worker
 npx wrangler dev
-``
+```
 
 ## Testing
 
